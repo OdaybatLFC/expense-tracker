@@ -3,7 +3,7 @@ spring:
     name: expense-tracker
 
   datasource:
-    url: jdbc:postgresql://localhost:6543/tennis_platform
+    url: jdbc:postgresql://localhost:6543/expense_tracker
     username: postgres
     password: postgres
 

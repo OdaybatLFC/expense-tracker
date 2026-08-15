@@ -1,6 +1,7 @@
 package com.springproject.expensetracker.auth.service;
 
 import com.springproject.expensetracker.auth.dto.*;
+import com.springproject.expensetracker.auth.entity.Role;
 import com.springproject.expensetracker.auth.entity.User;
 import com.springproject.expensetracker.auth.exception.EmailAlreadyExistsException;
 import com.springproject.expensetracker.auth.exception.InvalidCredentialsException;
@@ -69,9 +70,12 @@ public class AuthService {
                 passwordEncoder.encode(request.password())
         );
 
-        user.setRole(request.role());
+        //for now, we will set the role to BASIC, but in the future we can add a role field to the request and set it accordingly
+        user.setRole(Role.BASIC);
 
         user.setCreatedAt(LocalDateTime.now());
+
+        user.setUpdatedAt(LocalDateTime.now());
 
         User savedUser = userRepository.save(user);
 

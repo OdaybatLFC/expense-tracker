@@ -17,7 +17,6 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
-@Profile("local")
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {

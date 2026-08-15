@@ -13,9 +13,7 @@ public record RegisterRequestDto (
 
         @NotBlank
         @Size(min = 6)
-        String password,
-
-        Role role
+        String password
 
 ) {
 }
