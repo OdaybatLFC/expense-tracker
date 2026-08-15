@@ -1,0 +1,30 @@
+package com.springproject.expensetracker.auth.service;
+
+import com.springproject.expensetracker.auth.entity.User;
+import com.springproject.expensetracker.auth.repository.UserRepository;
+import com.springproject.expensetracker.auth.security.UserPrincipal;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class CustomUserDetailsService
+        implements UserDetailsService {
+
+    private final UserRepository userRepository;
+
+    @Override
+    public UserDetails loadUserByUsername(String email)
+            throws UsernameNotFoundException {
+
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() ->
+                        new UsernameNotFoundException(email));
+
+        return new UserPrincipal(user);
+    }
+
+}

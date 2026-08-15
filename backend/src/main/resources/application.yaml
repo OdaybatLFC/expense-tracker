@@ -1,3 +1,24 @@
 spring:
   application:
     name: expense-tracker
+
+  datasource:
+    url: jdbc:postgresql://localhost:6543/tennis_platform
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+    properties:
+      hibernate:
+        format_sql: true
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+
+jwt:
+  secret: k3x8J9vYwq2P7mN0sL4dFh8QzR1aBcDeFgHiJkLmNoPqRsTuVwXyZ==
+  expiration: 86400000
