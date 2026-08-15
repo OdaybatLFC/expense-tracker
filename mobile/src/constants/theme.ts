@@ -1,25 +1,28 @@
-export const color = {
-  bg: "#F0F2F5",
-  card: "#FFFFFF",
-  foreground: "#0A1628",
-  foregroundAlt: "#FFFFFF",
-  primary: "#0A1628",
-  accent: "#C8F135",
-  accentFg: "#0A1628",
-  muted: "#E8EBF0",
-  mutedFg: "#6B7A90",
-  border: "rgba(10,22,40,0.08)",
-  red: "#E53935",
-  green: "#43A047",
-  clay: "#C9A96E",
-  grass: "#4CAF50",
-  hard: "#3D8BFF",
+export const colors = {
+  primary: "#2D63FF",
+  primaryDark: "#1748D1",
+  white: "#FFFFFF",
+  text: "#111827",
+  muted: "#6B7280",
+  placeholder: "#9CA3AF",
+  input: "#F3F4F6",
+  border: "#E5E7EB",
+  danger: "#DC2626",
+  success: "#16A34A",
+};
+
+export const spacing = {
+  xs: 4,
+  sm: 8,
+  md: 16,
+  lg: 24,
+  xl: 32,
+  xxl: 48,
 };
 
 export const radius = {
-  sm: 10,
+  sm: 8,
   md: 14,
   lg: 20,
-  xl: 24,
-  full: 999,
+  pill: 999,
 };
