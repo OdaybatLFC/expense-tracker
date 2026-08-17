@@ -40,10 +40,7 @@ async function authenticate(
   endpoint: '/login' | '/register',
   payload: SignInRequest | RegisterRequest,
 ): Promise<AuthUser> {
-  const response = await apiClient.post<AuthResponse>(
-    endpoint,
-    payload,
-  );
+  const response = await apiClient.post<AuthResponse>("/auth" + endpoint, payload);
 
   const authResponse = response.data;
   const token = extractAccessToken(authResponse);
