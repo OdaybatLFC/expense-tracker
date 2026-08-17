@@ -14,5 +14,6 @@ CREATE TABLE users (
 --changeset aleksandar:002
 
 ALTER TABLE users
-    ADD COLUMN name VARCHAR(255) NOT NULL,
+    ADD COLUMN firstName VARCHAR(255) NOT NULL,
+    ADD COLUMN lastName VARCHAR(255) NOT NULL,
     ADD COLUMN default_currency VARCHAR(3) NOT NULL DEFAULT 'EUR';

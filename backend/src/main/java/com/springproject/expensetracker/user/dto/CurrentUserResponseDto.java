@@ -6,6 +6,7 @@ public record CurrentUserResponseDto(
 
         Long id,
         String email,
+        String firstName,
         Role role
 
 ) {

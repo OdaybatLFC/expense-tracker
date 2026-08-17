@@ -47,6 +47,7 @@ public class AuthController {
         return new CurrentUserResponseDto(
                 user.getId(),
                 user.getEmail(),
+                user.getFirstName(),
                 user.getRole()
         );
 

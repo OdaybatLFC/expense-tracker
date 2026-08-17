@@ -19,6 +19,10 @@ public class UserPrincipal implements UserDetails {
 
     private final String password;
 
+    private final String firstName;
+
+    private final String lastName;
+
     private final Role role;
 
 
@@ -28,6 +32,8 @@ public class UserPrincipal implements UserDetails {
         this.email = user.getEmail();
         this.password = user.getPassword();
         this.role = user.getRole();
+        this.firstName = user.getFirstName();
+        this.lastName =  user.getLastName();
     }
 
     @Override
