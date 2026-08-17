@@ -36,6 +36,7 @@ Spring Boot REST API
        |
        v
 PostgreSQL
+```
 
 # Main Features
 
