@@ -1,7 +1,7 @@
-package com.springproject.expensetracker.auth.service;
+package com.springproject.expensetracker.user.service;
 
-import com.springproject.expensetracker.auth.entity.User;
-import com.springproject.expensetracker.auth.repository.UserRepository;
+import com.springproject.expensetracker.user.entity.User;
+import com.springproject.expensetracker.user.repository.UserRepository;
 import com.springproject.expensetracker.auth.security.UserPrincipal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;

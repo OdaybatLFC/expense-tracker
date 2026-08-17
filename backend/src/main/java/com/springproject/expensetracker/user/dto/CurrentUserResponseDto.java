@@ -1,8 +1,8 @@
-package com.springproject.expensetracker.auth.dto;
+package com.springproject.expensetracker.user.dto;
 
 import com.springproject.expensetracker.user.entity.Role;
 
-public record RegisterResponseDto (
+public record CurrentUserResponseDto(
 
         Long id,
         String email,

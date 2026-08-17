@@ -1,8 +1,7 @@
 package com.springproject.expensetracker.auth.security;
 
-import com.springproject.expensetracker.auth.entity.User;
-import com.springproject.expensetracker.auth.repository.UserRepository;
-import com.springproject.expensetracker.auth.service.CustomUserDetailsService;
+import com.springproject.expensetracker.user.repository.UserRepository;
+import com.springproject.expensetracker.user.service.CustomUserDetailsService;
 import com.springproject.expensetracker.auth.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

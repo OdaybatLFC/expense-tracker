@@ -1,4 +1,4 @@
-package com.springproject.expensetracker.auth.entity;
+package com.springproject.expensetracker.user.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,7 +1,7 @@
 package com.springproject.expensetracker.auth.security;
 
-import com.springproject.expensetracker.auth.entity.Role;
-import com.springproject.expensetracker.auth.entity.User;
+import com.springproject.expensetracker.user.entity.Role;
+import com.springproject.expensetracker.user.entity.User;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

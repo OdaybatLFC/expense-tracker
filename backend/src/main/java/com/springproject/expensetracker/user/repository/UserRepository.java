@@ -1,6 +1,6 @@
-package com.springproject.expensetracker.auth.repository;
+package com.springproject.expensetracker.user.repository;
 
-import com.springproject.expensetracker.auth.entity.User;
+import com.springproject.expensetracker.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

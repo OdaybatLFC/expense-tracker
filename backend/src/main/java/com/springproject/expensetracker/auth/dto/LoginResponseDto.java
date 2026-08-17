@@ -1,6 +1,6 @@
 package com.springproject.expensetracker.auth.dto;
 
-import com.springproject.expensetracker.auth.entity.Role;
+import com.springproject.expensetracker.user.entity.Role;
 
 public record LoginResponseDto(
 

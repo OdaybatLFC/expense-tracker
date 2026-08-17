@@ -3,6 +3,7 @@ package com.springproject.expensetracker.auth.controller;
 import com.springproject.expensetracker.auth.dto.*;
 import com.springproject.expensetracker.auth.security.UserPrincipal;
 import com.springproject.expensetracker.auth.service.AuthService;
+import com.springproject.expensetracker.user.dto.CurrentUserResponseDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

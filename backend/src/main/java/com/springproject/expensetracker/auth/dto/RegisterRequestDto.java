@@ -1,6 +1,5 @@
 package com.springproject.expensetracker.auth.dto;
 
-import com.springproject.expensetracker.auth.entity.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

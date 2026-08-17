@@ -1,11 +1,11 @@
 package com.springproject.expensetracker.auth.service;
 
 import com.springproject.expensetracker.auth.dto.*;
-import com.springproject.expensetracker.auth.entity.Role;
-import com.springproject.expensetracker.auth.entity.User;
+import com.springproject.expensetracker.user.entity.Role;
+import com.springproject.expensetracker.user.entity.User;
 import com.springproject.expensetracker.auth.exception.EmailAlreadyExistsException;
 import com.springproject.expensetracker.auth.exception.InvalidCredentialsException;
-import com.springproject.expensetracker.auth.repository.UserRepository;
+import com.springproject.expensetracker.user.repository.UserRepository;
 import com.springproject.expensetracker.auth.security.UserPrincipal;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

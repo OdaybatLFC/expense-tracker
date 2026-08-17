@@ -1,4 +1,4 @@
-package com.springproject.expensetracker.auth.entity;
+package com.springproject.expensetracker.user.entity;
 
 public enum Role {
 
