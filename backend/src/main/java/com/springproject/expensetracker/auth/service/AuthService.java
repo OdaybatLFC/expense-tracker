@@ -70,12 +70,12 @@ public class AuthService {
                 passwordEncoder.encode(request.password())
         );
 
-        //for now, we will set the role to BASIC, but in the future we can add a role field to the request and set it accordingly
+        //TODO:for now, we will set the role to BASIC, but in the future we can add a role field to the request and set it accordingly
         user.setRole(Role.BASIC);
 
-        user.setCreatedAt(LocalDateTime.now());
-
-        user.setUpdatedAt(LocalDateTime.now());
+//        user.setCreatedAt(LocalDateTime.now());
+//
+//        user.setUpdatedAt(LocalDateTime.now());
 
         User savedUser = userRepository.save(user);
 
