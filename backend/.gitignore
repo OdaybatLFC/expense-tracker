@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### OSM DATA ###
+/osm-data/
+*.osm.pbf
