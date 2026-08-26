@@ -28,13 +28,14 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
     private Role role;
 
-    @Column(length = 255)
+    @Column(name = "firstname", length = 255)
     private String firstName;
 
-    @Column(length = 255)
+    @Column(name = "lastname", length = 255)
     private String lastName;
 
     @Column(name = "default_currency", nullable = false, length = 3)
