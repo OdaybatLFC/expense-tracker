@@ -8,9 +8,20 @@ import java.util.Optional;
 
 public interface MerchantRepository extends JpaRepository<Merchant, Long> {
 
-    Optional<Merchant> findByIdAndUserId(Long id, Long userId);
+    List<Merchant> findByUser_IdOrderByNameAsc(Long userId);
 
-    Optional<Merchant> findByUserIdAndName(Long userId, String name);
+    List<Merchant> findByUser_IdAndNameContainingIgnoreCaseOrderByNameAsc(
+            Long userId,
+            String name
+    );
 
-    List<Merchant> findAllByUserId(Long userId);
+    Optional<Merchant> findByIdAndUser_Id(
+            Long merchantId,
+            Long userId
+    );
+
+    Optional<Merchant> findByUser_IdAndName(
+            Long userId,
+            String name
+    );
 }

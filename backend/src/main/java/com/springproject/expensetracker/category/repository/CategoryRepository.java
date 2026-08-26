@@ -12,4 +12,7 @@ public interface CategoryRepository extends JpaRepository<Category, Long> {
     Optional<Category> findByCode(String code);
 
     List<Category> findByType(CategoryType type);
+
+    List<Category> findAllByOrderByIdAsc();
+
 }
